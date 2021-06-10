@@ -1,0 +1,422 @@
+/* Patrones globales del CSS */
+
+/* Tipo de Títulos, Subtítulos, Enlaces y Botones: Poppins */
+h1, h2, h3, h4, h5, h6, a, button { font-family: 'Oxygen', sans-serif; }
+
+/* Tipo de Párrafos: Oxygen */
+p, span, strong, em, div { font-family: 'Oxygen', sans-serif; }
+
+/* Quitar Margen por defecto de Body  */
+body { margin: 0 auto !important; overflow-x: hidden !important; }
+
+/* Quitar margen por detecto en Títulos y Párrafos */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0 !important; }
+
+/* Confirmar display: block; a elementos de estructura HTML5 */
+header, aside, main, footer, section, article, figure, nav, figcaption { display: block; }
+
+
+
+
+/* Configuración del estilo propio */
+
+
+/* Componentes Aside: Menú Responsive Derecha 290px */
+aside#responsive { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; right: -290px; z-index: 1000; background: #ffe3c9c2; }
+
+aside#responsive a#abrir { width: 35px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 20px; left: -35px; z-index: 1; color: #4F4998; font-size: 1.25em; line-height: 1em; text-align: center; padding: 7.5px 0; transition: all 0.3s ease-in; }
+aside#responsive a#abrir:hover { color: #4F4998; transition: all 0.3s ease-in; }
+
+aside#responsive a#cerrar { width: 35px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 20px; left: -35px; z-index: 2; color: #4F4998; font-size: 1.25em; line-height: 1em; text-align: center; padding: 7.5px 0; transition: all 0.3s ease-in; }
+aside#responsive a#cerrar:hover { background: #4F4998; transition: all 0.3s ease-in; }
+
+aside#responsive nav { width: 58%; height: auto; display: block; margin: 25px auto 0 auto; float: none; position: relative; }
+aside#responsive nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; font-size: 1em; line-height: 1em; color: #4F4998; text-decoration: none; padding: 14px 0; text-align: right; }
+aside#responsive nav a:hover {  }
+
+/* Componentes Aside: Botón flotante de WhatsApp */
+aside#boton-wp { width: 50px; height: 50px; margin: 0; float: none; position: fixed; bottom: 30px; right: 30px; z-index: 99996; }
+aside#boton-wp a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #4F4998; background: #FFFDEF; font-size: 1.55em; line-height: 1em; text-align: center; padding: 12.5px 0; border-radius: 50%; box-shadow: 0 0 15px rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+aside#boton-wp a:hover { color: #fff; background: #333; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Header con logo a la izquierda y menú a la derecha */
+header {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    float: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #F4ECD5;
+}
+header article {
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+header article figure {
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin: 10px 0;
+    float: left;
+    position: relative;
+}
+header article figure a {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    top: 7px;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+header article figure a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+header article figure a:hover { transform: scale(1.02); transition: all 0.3s ease-in; }
+
+
+header article nav#menu {
+    width: 322px;
+    height: 35px;
+    display: block;
+    margin: 22px 128px;
+    float: right;
+    position: relative;
+}
+header article nav#menu a {
+    width: auto; 
+    height: auto; 
+    display: block; 
+    margin: 0 9px; 
+    float: left; 
+    position: relative; 
+    font-size: 0.95em; 
+    line-height: 1em; 
+    color: #4F4998; 
+    text-decoration: none; 
+    padding: 10px 0; 
+    font-weight: 300; 
+    letter-spacing: 0.03em; 
+    border-bottom: solid 2px #4F4998; 
+    transition: all 0.3s ease-in;
+}
+header article nav#menu a:hover { color: #F297A2; border-bottom: solid 2px #F297A2; transition: all 0.3s ease-in; }
+header article nav#menu a.activo { color: #F297A2; border-bottom: solid 2px #F297A2; transition: all 0.3s ease-in; }
+
+
+
+/* Caja Main */
+main {
+    margin-top: 80px;
+}
+
+/* Sección Perfil */
+main section#mi-perfil {
+    width: 100%;
+    height: auto;
+}
+main section#mi-perfil article {
+    width: 85%;
+    height: 534px;
+    float: none;
+    margin: 0 auto;
+}
+main section#mi-perfil article div#imag {
+    width: 30%;
+    float: left;
+    padding: 0 25px 0 0;
+    padding-top: 40px;
+}
+main section#mi-perfil article div#imag img {
+    width: 100%;
+    height: auto;
+}
+main section#mi-perfil article div#texto {
+    width: 33%;
+    float: left;
+    padding: 0 15px 0 0;
+    padding-top: 250px;
+}
+main section#mi-perfil article div#texto h1 {
+    color: #C4DFF6;
+    text-align: right;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+main section#mi-perfil article div#texto p {
+    color: #F297A2;
+    text-align: right;
+}
+main section#mi-perfil article div#foto {
+    width: 33%;
+    height: auto;
+    float: left;
+    padding-top: 150px;
+}
+main section#mi-perfil article div#foto img {
+    width: 100%;
+}
+
+/* Sección Servicios */
+main section#servicios {
+    width: 100%;
+    height: auto;
+    background: #FFF3D6;
+}
+main section#servicios article {
+    width: 85%;
+    height: 660px;
+    float: none;
+    margin: 0 auto;
+}
+main section#servicios article div.titulo {
+    width: 240px;
+    float: none;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+}
+main section#servicios article div.titulo h2 {
+    width: 100px;
+    color: #ABBDCD;
+    font-weight: 400;
+    padding: 15px 70px;
+    text-align: center;
+    background: #F1D1B9;
+}
+main section#servicios article figure {
+    width: 100%;
+    height: auto;
+}
+main section#servicios article figure div {
+    width: 22%;
+    height: auto;
+    padding: 0 16px;
+    float: left;
+}
+main section#servicios article.galeria {
+    width: 85%;
+    height: 850px;
+    float: none;
+    margin: 0 auto;
+}
+main section#servicios article figure.f-uno {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 50px;
+}
+main section#servicios article figure a.img-galeria {
+    width: 30%;
+    height: auto;
+    padding: 0 16px;
+    float: left;
+}
+main section#servicios article figure a img.galeria-f {   
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+}
+main section#servicios article figure div img {
+    width: 100%;
+}
+main section#servicios article figure div h3 {
+    height: 40px;
+    text-align: center;
+    background: #F1D1B9;
+    padding: 10px;
+    color: #ABBDCD;
+    font-weight: 500;
+}
+main section#servicios article figure div a {
+    display: block;
+    float: none;
+    margin: 10px auto;
+    padding: 9px 40px;
+    width: 60px;
+    border-radius: 18px;
+    background: #F1D1B9;
+    text-decoration: none;
+    color: #4F4998;
+    transition: all 0.3s ease-in;
+}
+main section#servicios article figure div a:hover {
+    color: #fff; background: #333; transition: all 0.3s ease-in;
+}
+
+/* Sección de Contacto */
+main section#contactame {
+    width: 100%;
+    height: auto;
+    background: #FFE3C9;
+}
+main section#contactame article {
+    width: 85%;
+    height: 725px;
+    float: none;
+    margin: 0 auto;
+}
+main section#contactame article div.titulo {
+    width: 240px;
+    float: none;
+    margin: 0 auto;
+    padding: 30px 0 10px 0;
+}
+main section#contactame article div.titulo h2 {
+    width: 130px;
+    color: #ABBDCD;
+    font-weight: 400;
+    padding: 15px 70px;
+    background: #F1D1B9;
+}
+main section#contactame figure {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+main section#contactame figure div {
+    width: 45%;
+    height: auto;
+    float: left;
+    padding: 20px 26px 0 0;
+}
+main section#contactame figure div.down {
+    width: 45%;
+    height: auto;
+    float: left;
+    padding: 80px 26px 0 0;
+}
+main section#contactame figure div img {
+    width: 100%;
+    height: auto;
+}
+main section#contactame figure div#titulo-dos {
+    width: 280px;
+    float: none;
+    margin: 0 auto;
+    padding: 125px 0 10px 0;
+}
+main section#contactame figure div#titulo-dos h3 {
+    width: 145px;
+    color: #F297A2;
+    font-weight: 400;
+    padding: 15px 54px;
+    background: #FFF5BA;
+}
+main section#contactame figure img {
+    width: 250px;
+    height: auto;
+    float: none;
+    margin: 20px auto;
+    display: block;
+}
+main section#contactame figure a {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3em;
+    color: #ABBDCD;
+    transition: all 0.3s ease-in;
+}
+main section#contactame figure a:hover {
+    color: #4F4998; 
+}
+
+/* Componente Footer */
+footer { width: 100%; height: auto; }
+footer article { width: 100%; height: auto; background: #f9cacc; }
+footer article div { width: 100%; height: 300px; background: #EAD2BC; }
+footer article div h2 { text-align: center; color: #ABBDCD; font-weight: 400; font-size: 1.8em; padding-top: 35px; }
+footer article div nav { width: 400px; height: auto; float: none; margin: 70px auto; }
+footer article div nav a { color: #F297A2; font-size: 5em; text-decoration: none; padding: 10px 5px; transition: all 0.3s ease-in; }
+footer article div nav a:hover { color: #fff; transition: all 0.3s ease-in; }
+footer article div#d { width: 468px; height: 175px; margin: 0 auto; float: none; }
+footer article div#d img { width: 100%; height: auto; }
+
+
+/* Tablets */
+@media only screen and (max-width: 1199px){
+    aside#responsive { display: block; }
+    header article { width: 80%; }
+    header article nav#menu { display: none; }
+    header article figure { margin: 0 auto !important; float: none; }
+
+    main section#mi-perfil article div#imag {display: none;}
+    main section#mi-perfil article div#texto {
+        width: 47%;
+    }
+    main section#mi-perfil article div#foto {
+        width: 47%;
+    }
+
+    main section#servicios article {
+        height: 1700px;
+    }
+    main section#servicios article figure div {
+        width: 44%;
+        padding: 22px 24px;
+    }
+    main section#contactame figure div {
+        padding: 20px 15px 0 0;
+    }
+    main section#servicios article.galeria {
+        width: 85%;
+        height: auto;
+        float: none;
+        margin: 0 auto;
+    }
+    main section#servicios article figure.f-uno {
+        width: 75%;
+        height: auto;
+        padding-bottom: 50px;
+        margin: 0 auto !important;
+    }
+    main section#servicios article figure a.img-galeria {
+        width: 100%;
+        height: 600px;
+        padding: 20px 20px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    main section#servicios article figure a img.galeria-f {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: right;
+    }
+}
+
+@media only screen and (max-width: 899px){}
+
+@media only screen and (max-width: 799px){}
+
+@media only screen and (max-width: 599px){}
+
+/* Móviles */
+@media only screen and (max-width: 499px){}
+
+@media only screen and (max-width: 449px){}
+
+@media only screen and (max-width: 399px){
+
+    
+}
